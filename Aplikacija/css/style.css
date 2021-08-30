@@ -1,0 +1,720 @@
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+  background: linear-gradient(to top, black, rgb(19, 19, 100));
+  border-radius: 11%;
+  box-shadow: 2px 10px 40px 0px rgb(7, 2, 24);
+  align-items: center;
+  justify-content: space-between;
+}
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap-reverse;
+}
+.kontejner-main-body .divGreske {
+  width: 50%;
+  font-size: larger;
+}
+.video-link {
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #f1f1f1;
+  text-align: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  display: none;
+}
+.video-klasa {
+  display: block;
+}
+#spana {
+  display: none;
+  background: radial-gradient(
+    #457bb9 13%,
+    rgb(31, 19, 97) 66%,
+    rgb(0, 0, 0) 99%
+  );
+  border: 0.5px solid rgb(6, 6, 27);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: cornsilk;
+  border-radius: 40%;
+  margin: 10px;
+  width: 120px;
+  height: 50px;
+}
+.main-nav li a,
+.auth li a {
+  text-decoration: none;
+  color: rgb(10, 12, 8);
+  margin: 5px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 1000;
+}
+.auth {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.logo {
+  align-self: flex-start;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.menu-button {
+  background: radial-gradient(
+    #457bb9 13%,
+    rgb(31, 19, 97) 66%,
+    rgb(0, 0, 0) 99%
+  );
+  border: 0.5px solid rgb(6, 6, 27);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: cornsilk;
+  border-radius: 40%;
+  margin: 10px;
+  width: 120px;
+  height: 50px;
+  visibility: visible;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(24, 24, 148) 40%,
+    rgba(0, 0, 0, 0.911) 115%
+  );
+  border-radius: 11%;
+  box-shadow: 2px 10px 40px 0px rgb(7, 2, 24);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  flex-wrap: wrap;
+  background-image: url("/Aplikacija/images/back.png");
+  background-size: auto;
+}
+.userimg {
+  width: 20%;
+  height: 20%;
+}
+.cat-mainview {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.cat-button {
+  height: 250px;
+  width: 250px;
+}
+
+#c,
+#cpp,
+#cs,
+#java,
+#js,
+#py {
+  height: 300px;
+  width: 400px;
+  margin: 30px;
+  border-radius: 15%;
+}
+
+#c,
+#cpp,
+#cs {
+  background: radial-gradient(
+    #f0e6e6 23%,
+    rgba(36, 12, 49, 0.795) 66%,
+    rgba(16, 16, 61, 0.801) 99%
+  );
+  border: 7px solid rgba(114, 30, 210, 0.479);
+}
+#java,
+#js,
+#py {
+  background: radial-gradient(
+    #f0e6e6 23%,
+    rgba(152, 156, 25, 0.801) 66%,
+    rgba(163, 80, 24, 0.76) 99%
+  );
+  border: 7px solid rgba(210, 105, 30, 0.479);
+}
+
+/*@media (max-width: 955px) {
+  .cat-button {
+    width: 200px;
+    height: 200px;
+  }
+  #c,
+  #cpp,
+  #cs,
+  #java,
+  #js,
+  #py {
+    height: 250px;
+    width: 350px;
+    border-radius: 15%;
+    margin: 20px;
+  }
+  body div ul li .menu-button {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+  }
+  #spana {
+    display: block;
+  }
+}*/
+.sidenav {
+  background-color: #352e94d3;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media (max-width: 825px) {
+  body #drugiLogIn, body #drugiRegister{
+    width:90%;
+  }
+  body .add2,
+  body .approve2,
+  body .reports2
+  body .users2 {
+    width: 90%;
+  }
+  .kontejner-main-body .kontejner {
+    width: 100%;
+  }
+  .kontejner-main-body .topList2 {
+    width: 100%;
+  }
+  .kontejner-koml,
+  .kontejner-komd {
+    display: none;
+  }
+  .kontejner {
+    width: 100%;
+  }
+  .kontejner-zadatka {
+    width: 100%;
+  }
+  .cat-button {
+    width: 150px;
+    height: 150px;
+  }
+  #c,
+  #cpp,
+  #cs,
+  #java,
+  #js,
+  #py {
+    height: 200px;
+    width: 250px;
+    border-radius: 15%;
+    margin: 10px;
+  }
+  body div ul li .menu-button {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+  }
+  #spana {
+    display: block;
+  }
+  .video-link {
+    display: block;
+  }
+  .video-klasa {
+    display: none;
+  }
+}
+#spana {
+  text-align: center;
+}
+
+.log-mainview,
+.reg-mainview,
+.add-mainview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 3px solid #b4b2b2;
+  background-color: rgba(92, 84, 84, 0.808);
+  border-radius: 12%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.loginbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.loginbtn:hover {
+  opacity: 0.8;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.log-container,
+.add-container {
+  padding: 16px;
+  margin: 10px;
+
+  color: rgba(253, 250, 250, 0.733);
+}
+hr {
+  width: 100%;
+}
+.add-container {
+  display: flex;
+  flex-direction: column;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  body div ul li .menu-button {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+  }
+  #spana {
+    display: block;
+  }
+  .video-klasa {
+    display: none;
+  }
+  .video-link {
+    display: block;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.reg-container {
+  padding: 16px;
+  color: rgb(243, 243, 247);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.signin {
+  text-align: center;
+}
+
+#problemText {
+  width: 100%;
+  width: 650px;
+  height: 250px;
+  font-size: 20px;
+}
+.answers {
+  display: flex;
+  flex-direction: column;
+}
+.ansrow {
+  display: flex;
+  flex-direction: row;
+}
+.ansrow input[type="text"] {
+  height: 35px;
+  width: 50%;
+}
+.ansrow input[type="radio"] {
+  height: 23px;
+  width: 30%;
+}
+.pointrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.pointrow input[type="number"] {
+  height: 35px;
+  width: 30%;
+}
+.pointrow button {
+  height: 35px;
+  width: 30%;
+  background-color: rgba(94, 165, 22, 0.822);
+}
+.kontejner-report-error {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+}
+.kontejner-odgovor {
+  font-size: larger;
+}
+.kontejner-greske {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+.text-box-report-error {
+  display: flex;
+  height: 550px;
+  width: 80%;
+}
+.submit-button-for-report {
+  display: flex;
+}
+
+/* Anitina umetnost krece ovde */
+.menu-button {
+  cursor: pointer;
+}
+.btnKategorija {
+  margin: 35px;
+  height: 100px;
+  width: 170px;
+  background-color: #4c6fafec;
+  border-radius: 12%;
+  font-family: monospace;
+  font-size: xx-large;
+  color: #030e03;
+  text-shadow: 2px 2px rgba(14, 45, 148, 0.753);
+  font-stretch: normal;
+  box-shadow: 5px 7px rgba(6, 19, 134, 0.808);
+  cursor: pointer;
+}
+
+#drugiCategoryMain {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+#drugiLogIn,
+#drugiRegister {
+  display: flex;
+  align-self: center;
+  padding: 6%;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #7bdb7ed5;
+  box-shadow: 5px 7px #60aa62d0;
+  border-radius: 2%;
+  font-size: larger;
+  margin: 5%;
+  width: 40%;
+}
+.btnLogin,
+.btnRegister,
+.btnPosaljiError {
+  font-size: large;
+  cursor: pointer;
+}
+#drugiProfil {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 70%;
+  margin-top: 100px;
+  background-color: #e7e7e7f6;
+  border: 1px solid rgb(80, 78, 78);
+}
+#drugiProfil label {
+  text-align: center;
+}
+.btnOdjava {
+  width: 20%;
+  height: 50%;
+  background-color: rgba(245, 71, 71, 0.664);
+  margin: 1%;
+}
+
+.btnIzmena {
+  width: 25%;
+  height: 50%;
+  background-color: rgba(167, 224, 52, 0.897);
+  margin: 1%;
+  flex-wrap: wrap;
+}
+
+.btnReseni {
+  width: 25%;
+  height: 50%;
+  background-color: rgba(15, 182, 182, 0.76);
+  margin: 1%;
+  flex-wrap: wrap;
+}
+
+#category-btn {
+  background-color: darkslateblue;
+}
+.topList2 {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 230, 0, 0.918);
+  box-shadow: 5px 7px rgba(134, 93, 6, 0.808);
+  border-radius: 3%;
+  margin: 3%;
+  width: 50%;
+  height: 100%;
+  justify-self: right;
+}
+.add2,
+.approve2,
+.reports2,
+.users2 {
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  text-align: left;
+  background-color: #cfbbffef;
+  box-shadow: 5px 7px #7a6e97ef;
+  width: 50%;
+  margin-top: 7%;
+}
+.zadatak-za-approve {
+  width: 80%;
+}
+.korisnik{
+  width:80%;
+}
+body .approve2 {
+  width: 60%;
+}
+body .users2{
+  width:60%;
+}
+.tekstZadatkaInput,
+.objasnjenjeInput {
+  height: 60px;
+  width: 95%;
+}
+.prJezikInput,
+.postaviBtn {
+  width: 30%;
+}
+.postaviBtn {
+  cursor: pointer;
+  background-color: #39246bb4;
+}
+/* approve*/
+.kontejnerSvihZadataka {
+  flex-direction: column;
+  display: flex;
+  width: 40%;
+
+  align-self: center;
+  margin-top: 10%;
+  background-color: rgba(198, 248, 205, 0.952);
+  border: 1px solid pink;
+}
+.kontejnerSvihKorisnika {
+  flex-direction: column;
+  display: flex;
+  width: 40%;
+
+  align-self: center;
+  margin-top: 10%;
+  background-color: rgba(140, 114, 170, 0.952);
+  border: 1px solid rgb(24, 22, 22);
+}
+
+
+.textInputGreska {
+  width: 100%;
+  height: 100px;
+  padding: 3px;
+  justify-self: center;
+}
+.divOcenaZadataka {
+  justify-content: space-between;
+  align-self: flex-end;
+}
+.divOcenaZadataka button{
+  margin:1px;
+  background-color: purple;
+  color:white;
+}
+.divGreske {
+  margin-top: 7%;
+  height: 200px;
+  flex-direction: column;
+  background-color: rgba(232, 241, 104, 0.87);
+  border: solid 2px orangered;
+  border-radius: 10px;
+}
+.labGreske {
+  font-family: monospace;
+}
+.kontejnerIzmene {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 50%;
+  background-color: rgba(50, 126, 97, 0.795);
+  box-shadow: 5px 7px rgba(3, 82, 39, 0.808);
+  border: 1px solid rgb(19, 7, 7);
+}
+.inputOpcijaA,
+.inputOpcijaB,
+.inputOpcijaC {
+  width: 30%;
+}
+.inputTekstZadatka {
+  width: 80%;
+  height: 80px;
+}
+.btnIzmeniZad {
+  width: 30%;
+  background-color: rgb(50, 204, 127);
+}
+
+.reseniZadaciBox {
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+}
+.reseniZadaciBox .kontejner-zadatka {
+  width: 100%;
+  background-color: rgba(70, 70, 221, 0.795);
+}
+
+.afterSolveScreen {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 5%;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 3%;
+  align-self: center;
+  background-color: rgba(247, 243, 58, 0.952);
+  border: 3px dotted orange;
+}
+.dugmeLike {
+  background-color: palegreen;
+  padding: 2%;
+  margin: 2%;
+}
+.dugmeDisslike {
+  background-color: orangered;
+  padding: 2%;
+  margin: 2%;
+}
+.tekst-about-us {
+  display: flex;
+  flex-wrap: wrap;
+  color: #f1f1f1;
+  text-align: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.about-us-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cont-linkovi {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  size: 250px;
+}
+.git-link {
+  font-size: 25px;
+  margin: 7px;
+  color: #f1f1f1;
+  text-align: center;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
